@@ -1,6 +1,4 @@
-*{  margin: 0;  padding: 0;
-    box-sizing: border-box; 
-  }
+*{ margin: 0;  padding: 0; box-sizing: border-box;  }
 
 /* Global */
 .bg-dark   { background-color: #212121;}
@@ -10,70 +8,74 @@
 .black{ color: black;            }
 .white{ color: white;            }
 
-
 /* ------------------------------------------------------ */
 /* Navbar Section *//* Navbar Section *//* Navbar Section */
 /* ------------------------------------------------------ */
 
 .nav            /* Whole-Nav-section */
   { width: 100%; position: absolute; 
-    top: 0;      left: 0;     right: 0;   }
-
-#logo           /* Name-at-top-of-page */
-  { font-weight: 900; letter-spacing: .4vw;
-    padding-top:.1vw; font-size: 2.2vw;   }
-#sec-name{  padding-left:1vw;             }
-
+    top: 0;      left: 0;     right: 0;}
+#sec-name{  padding-left:1vw;          }
 .nav-bar        /*Inner-Nav-section */
   { margin: auto;       display: flex; 
     position: relative; font-size: 1.1vw;
-    box-shadow: 
-    -2.5px 0px green,
-    -4px 0px red;     z-index: 99;
     justify-content: space-between; 
-    font-family: 'Baloo Da 2', cursive;   }
-
+    font-family: 'Baloo Da 2', cursive;}
 /* Whole-of-Nav-links */
 .nav-bar ul
-  { display: grid; padding-top: 1vw;
-    grid-template-columns: 1fr 1fr 1fr;   }
+  { transform: rotate(-20deg);
+    position: relative; top: 2vw; left: 55vw }
 .nav-bar ul li
-  { padding: 0px 1vw;   list-style: none; 
-    position: relative; z-index: 1;       }
-
+  { padding: .2vw 0vw;   list-style: none; 
+    position: relative;  }
 /*Individual-Nav-links*/
 .nav-bar ul li a
-  { text-decoration: none; padding: 2px .5vw;
-    transition: .2s ease;  letter-spacing: .1vw;
-    text-shadow:           /* Navbar-Outlines */
-   -1px -1px 0 rgb(0, 0, 0), 
-    1px -1px 0 rgb(0, 0, 0),
-    -1px 1px 0 rgb(0, 0, 0),
-     1px 1px 0 rgb(0, 0, 0);            }
+  { color: rgb(0, 0, 0); text-decoration: none; 
+    transition: .2s ease;  letter-spacing: .1vw;}
 .nav-bar ul li a:hover
-  { color: rgb(0, 0, 0); cursor: pointer;
-    text-shadow:none;                     }
+  { color: rgb(0, 255, 0); cursor: pointer;
+    text-shadow:none; }
+
+    /* Media-Queries-For-Nav-Section */
+    @media only screen and (max-width: 1280px){
+    .nav-bar ul     { top: 4vw; left: 58vw }
+    .nav-bar ul li  { padding: .4vw 0;     }
+    .nav-bar ul li a{ font-size: 1.2vw;    }}
+    @media only screen and (max-width: 1080px){
+    .nav-bar ul     { top: 5vw; left: 60vw } 
+    .nav-bar ul li a{ font-size: 1.5vw;    }}
+    @media only screen and (max-width: 940px) {
+    .nav-bar ul     { top: 5vw; left: 64vw } 
+    .nav-bar ul li a{ font-size: 2vw;    }}
+    @media only screen and (max-width: 790px){ .nav-bar ul { left: 66vw }}
+    @media only screen and (max-width: 720px){ .nav-bar ul { left: 68vw } }
+    @media only screen and (max-width: 680px){ .nav-bar ul { top: 7vw; } }
+
+
 
 
 
 /* --------------------------------------------------- */
 /* HEAD--SECTION *//* HEAD--SECTION *//* HEAD--SECTION */
 /* --------------------------------------------------- */
-
+/* @media only screen and (max-width: 1000px){
+  .page-width{ width: 100% }
+} */
 /* Head-Backgroung-Config */
 .back-image
-  { position: relative;  height: 57vw;
+  { position: relative;  height: 58vw;
     background-image:url("Images//HomepageImagee.jpg");
     background-size:     cover;
-    background-position: bottom; 
+    background-position: center; 
+    filter: brightness(88%);
     background-repeat:   no-repeat; }
 
 /* Whole-of-Head-section */
 .head-container
   { font-size: 1vw; position: absolute;
-    top: 20.5vw;    left: 0;  right: 0;
+    top: 23vw;    left: 0;  right: 0;
     display: grid;  align-content: center;
-    justify-items:  center;                }
+    justify-items:  center;              }
 .head-intro
   { display: grid;  padding:1vw;
     grid-template-columns: 1fr 1fr;
@@ -87,7 +89,6 @@
 #fhead-name, #shead-name   /* Name-in-Head */
   { display: inline-block;      letter-spacing: .5vw; 
     transform: rotate(-14deg);  font-size: 3vw;       }
-
 .button                    /* Button-in-Head */
   { align-self: center; position: relative; top: 1vw; }
 #btn
@@ -105,7 +106,44 @@
     padding-left: 2vw; padding-top: 1vw;
     display: inline-block;                 }
 
+
+  /* Media-Queries-For-Head-Section */
+  @media only screen and (max-width: 1280px){
+  .head-container{ top: 28.5vw; left:4vw }}
+
+  @media only screen and (max-width: 1080px){
+  #fhead-name, #shead-name { font-size: 4vw; }
+  .head-container { top: 32.5vw; left:1vw }
+  #sub-head-text  { letter-spacing: 1.4vw; font-size: 1.2vw;}
+  #btn            { letter-spacing:  .8vw; } }
+
+  @media only screen and (max-width: 940px){
+  #fhead-name, 
+  #shead-name     { font-size: 4.5vw; letter-spacing: 1vw;}
+  #sub-head-text  { font-size: 1.3vw; letter-spacing: 1.8vw;}
+  #btn            { font-size: 1.5vw; letter-spacing: .6vw; }
+  .head-container { top: 39.5vw; right:4% } }
+
+  @media only screen and (max-width: 790px){
+    .head-container{ top: 44%; }
+  }
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------- */ /* ---------------------------------- */
 /* ABOUT--SECTION *//* ABOUT--SECTION */ /* ABOUT--SECTION *//* ABOUT--SECTION */
 /* ---------------------------------- */ /* ---------------------------------- */
@@ -120,18 +158,18 @@
     font-family: 'Finger Paint', cursive; }
 .about-bg
   { padding-top: 1px;    height: 58vw; 
-    position:            relative;
     background-image: url("Images/about-img.jpg");
     background-size:     cover; 
     background-position: top;
-    background-repeat:   no-repeat;}
-#about-overlay,
+    background-repeat:   no-repeat;
+  }
+/* #about-overlay,
 #project-overlay
   { position: absolute; top: 0; 
     height: 58vw;       width:100%;
-    background-color: rgb(0, 0, 0); }
-
-#about-overlay{ opacity: .1; }
+    background-color: rgb(0, 0, 0); } */
+/* 
+#about-overlay{ opacity: .1; } */
 
 /* ----------------------- */
 /* ----------------------- */
@@ -231,12 +269,19 @@
 
 
 
+  
+/* ---------------------------------- */ /* ---------------------------------- */
+/* PROJECT--SECTION *//* PROJECT--SECTION */ /* PROJECT--SECTION *//* ABOUT--SECTION */
+/* ---------------------------------- */ /* ---------------------------------- */
+
+
+
 /* Project-background */
 .project-bg{ 
   padding-top: 1px;    height: 54vw; 
-  position: relative;  z-index: 0;
+  position: relative;  
   background-image:    url("Images/project-img.jpg");
-  background-size:     cover;  
+  background-size:     cover;
   background-position: bottom; 
   background-repeat:   no-repeat; }
 .project-container{
@@ -410,3 +455,27 @@
   grid-area: bottom;
 font-size: 1vw; }
   
+@media only screen and (max-width: 1280px){
+  .back-image, .about-bg, .project-bg
+  { height: 70vw; } }
+
+@media only screen and (max-width: 1080px){
+  .back-image, .about-bg, .project-bg
+  { height: 80vw; }}
+
+@media only screen and (max-width: 940px){
+  .back-image, .about-bg, .project-bg
+  { height: 95vw; }}
+
+@media only screen and (max-width: 790px){
+  .back-image, .about-bg, .project-bg
+  { height: 105vh } }
+
+@media only screen and (max-width: 620px){
+  .back-image, .about-bg, .project-bg
+  { height: 100vh; }
+  .back-image{
+    background-size: 190vw 100vh;
+  }
+
+}
