@@ -50,6 +50,11 @@
     @media only screen and (max-width: 790px){ .nav-bar ul { left: 66vw }}
     @media only screen and (max-width: 720px){ .nav-bar ul { left: 68vw } }
     @media only screen and (max-width: 680px){ .nav-bar ul { top: 7vw; } }
+   
+    @media only screen and (max-width: 400px){
+      .nav-bar ul{ left: 260px; top: 40px; transform: rotate(-15deg);}
+      .nav-bar ul li  { padding: 6px 0; } }
+
 
 
 
@@ -124,9 +129,19 @@
   #btn            { font-size: 1.5vw; letter-spacing: .6vw; }
   .head-container { top: 39.5vw; right:4% } }
 
-  @media only screen and (max-width: 790px){
-    .head-container{ top: 44%; }
-  }
+  @media only screen and (max-width: 790px)
+  { .head-container{ top: 44%; }}
+
+  @media only screen and (max-width: 400px)
+  { .head-container{ top: 46%; left: 9vw; text-align: center; } 
+  .head-intro{padding: 0px;  justify-items: stretch; }
+  .head-text{padding: 0;}
+  #fhead-name, 
+  #shead-name     { font-size: 7vw; letter-spacing: .5vw; }
+  #sub-head-text  { font-size: 3vw; letter-spacing: 1.4vw;}
+  #btn            { font-size: 2.5vw; letter-spacing: .6vw; }
+
+}
 
   
 
@@ -476,6 +491,11 @@ font-size: 1vw; }
   { height: 100vh; }
   .back-image{
     background-size: 190vw 100vh;
-  }
+  }}
 
-}
+  @media only screen and (max-width: 400px){
+    .back-image, .about-bg, .project-bg
+    { height: 700px; }
+    .back-image{
+      background-size: 600px 750px;
+      background-position: -90px; }
