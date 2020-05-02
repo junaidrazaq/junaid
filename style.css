@@ -51,9 +51,16 @@
     @media only screen and (max-width: 720px){ .nav-bar ul { left: 68vw } }
     @media only screen and (max-width: 680px){ .nav-bar ul { top: 7vw; } }
    
+    @media only screen and (max-width: 500px){
+    .nav-bar ul{     left: 270px; top: 60px; transform: rotate(-18deg);}
+    .nav-bar ul li{  padding: 3.5px 0; }
+    .nav-bar ul li a{font-size: 2.6vw; letter-spacing: 2px;}}
+
+
     @media only screen and (max-width: 400px){
-      .nav-bar ul{ left: 260px; top: 40px; transform: rotate(-15deg);}
-      .nav-bar ul li  { padding: 6px 0; } }
+    .nav-bar ul{ left: 245px; top: 45px; transform: rotate(-15deg);}
+    .nav-bar ul li  { padding: 6px 0;  } 
+    .nav-bar ul li a{ font-size: 2.3vw;} }
 
 
 
@@ -113,8 +120,8 @@
 
 
   /* Media-Queries-For-Head-Section */
-  @media only screen and (max-width: 1280px){
-  .head-container{ top: 28.5vw; left:4vw }}
+  @media only screen and (max-width: 1280px)
+  { .head-container{ top: 28.5vw; left:4vw }}
 
   @media only screen and (max-width: 1080px){
   #fhead-name, #shead-name { font-size: 4vw; }
@@ -132,16 +139,16 @@
   @media only screen and (max-width: 790px)
   { .head-container{ top: 44%; }}
 
-  @media only screen and (max-width: 400px)
-  { .head-container{ top: 46%; left: 9vw; text-align: center; } 
+  @media only screen and (max-width: 500px){
+  .head-container{ left: 9vw; text-align: center; } 
   .head-intro{padding: 0px;  justify-items: stretch; }
-  .head-text{padding: 0;}
-  #fhead-name, 
-  #shead-name     { font-size: 7vw; letter-spacing: .5vw; }
+  #fhead-name, #shead-name     { font-size: 7vw; letter-spacing: .5vw; }
   #sub-head-text  { font-size: 3vw; letter-spacing: 1.4vw;}
   #btn            { font-size: 2.5vw; letter-spacing: .6vw; }
+  .head-text{padding: 0;} }
 
-}
+  @media only screen and (max-width: 400px)
+  { .head-container{ top: 307px; } }
 
   
 
