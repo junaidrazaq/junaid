@@ -11,7 +11,6 @@
 /* ------------------------------------------------------ */
 /* Navbar Section *//* Navbar Section *//* Navbar Section */
 /* ------------------------------------------------------ */
-
 .nav            /* Whole-Nav-section */
   { width: 100%; position: absolute; 
     top: 0;      left: 0;     right: 0;}
@@ -37,34 +36,27 @@
     text-shadow:none; }
 
     /* Media-Queries-For-Nav-Section */
-    @media only screen and (max-width: 1280px){
-    .nav-bar ul     { top: 4vw; left: 58vw }
-    .nav-bar ul li  { padding: .4vw 0;     }
-    .nav-bar ul li a{ font-size: 1.2vw;    }}
+    @media only screen and (max-width: 1280px){ .nav-bar ul{ top: 4vw; left: 58vw }
+      .nav-bar ul li{ padding: .4vw 0; } .nav-bar ul li a{ font-size: 1.2vw; }}
+    
     @media only screen and (max-width: 1080px){
-    .nav-bar ul     { top: 5vw; left: 60vw } 
-    .nav-bar ul li a{ font-size: 1.5vw;    }}
+      .nav-bar ul{ top: 5vw; left: 60vw } .nav-bar ul li a{ font-size: 1.5vw; }}
+    
     @media only screen and (max-width: 940px) {
-    .nav-bar ul     { top: 5vw; left: 64vw } 
-    .nav-bar ul li a{ font-size: 2vw;    }}
+      .nav-bar ul{ top: 5vw; left: 64vw } .nav-bar ul li a{ font-size: 2vw; }}
+
     @media only screen and (max-width: 790px){ .nav-bar ul { left: 66vw }}
     @media only screen and (max-width: 720px){ .nav-bar ul { left: 68vw } }
     @media only screen and (max-width: 680px){ .nav-bar ul { top: 7vw; } }
-   
-    @media only screen and (max-width: 500px){
-    .nav-bar ul{     left: 270px; top: 60px; transform: rotate(-18deg);}
-    .nav-bar ul li{  padding: 3.5px 0; }
-    .nav-bar ul li a{font-size: 2.6vw; letter-spacing: 2px;}}
 
+    @media only screen and (max-width: 500px){
+    .nav-bar ul{ left: 63vw; top: 60px; transform: rotate(-18deg);}
+    .nav-bar ul li{ padding: 3.5px 0; }
+    .nav-bar ul li a{ font-size: 2.6vw; letter-spacing: 2px;}}
 
     @media only screen and (max-width: 400px){
-    .nav-bar ul{ left: 245px; top: 45px; transform: rotate(-15deg);}
-    .nav-bar ul li  { padding: 6px 0;  } 
-    .nav-bar ul li a{ font-size: 2.3vw;} }
-
-
-
-
+    .nav-bar ul{ left: 240px; top: 80px; transform: rotate(-14deg);}
+    .nav-bar ul li{ padding: 7px 0;} .nav-bar ul li a{ font-size: 2.8vw;} }
 
 
 /* --------------------------------------------------- */
@@ -118,52 +110,24 @@
     padding-left: 2vw; padding-top: 1vw;
     display: inline-block;                 }
 
-
   /* Media-Queries-For-Head-Section */
-  @media only screen and (max-width: 1280px)
-  { .head-container{ top: 28.5vw; left:4vw }}
-
+  @media only screen and (max-width: 1280px) { .head-container{ top: 28.5vw; left:4vw }}
   @media only screen and (max-width: 1080px){
-  #fhead-name, #shead-name { font-size: 4vw; }
-  .head-container { top: 32.5vw; left:1vw }
-  #sub-head-text  { letter-spacing: 1.4vw; font-size: 1.2vw;}
-  #btn            { letter-spacing:  .8vw; } }
-
-  @media only screen and (max-width: 940px){
-  #fhead-name, 
-  #shead-name     { font-size: 4.5vw; letter-spacing: 1vw;}
-  #sub-head-text  { font-size: 1.3vw; letter-spacing: 1.8vw;}
-  #btn            { font-size: 1.5vw; letter-spacing: .6vw; }
-  .head-container { top: 39.5vw; right:4% } }
-
-  @media only screen and (max-width: 790px)
-  { .head-container{ top: 44%; }}
-
-  @media only screen and (max-width: 500px){
-  .head-container{ left: 9vw; text-align: center; } 
-  .head-intro{padding: 0px;  justify-items: stretch; }
-  #fhead-name, #shead-name     { font-size: 7vw; letter-spacing: .5vw; }
-  #sub-head-text  { font-size: 3vw; letter-spacing: 1.4vw;}
-  #btn            { font-size: 2.5vw; letter-spacing: .6vw; }
-  .head-text{padding: 0;} }
-
-  @media only screen and (max-width: 400px)
-  { .head-container{ top: 307px; } }
-
+    #fhead-name, #shead-name { font-size: 4vw; } .head-container{ top: 32.5vw; left:1vw }
+    #sub-head-text{ letter-spacing: 1.4vw; font-size: 1.2vw;} #btn{ letter-spacing:  .8vw; } }
   
+  @media only screen and (max-width: 940px){
+    #fhead-name, #shead-name{ font-size: 4.5vw; letter-spacing: 1vw;}
+    #sub-head-text{ font-size: 1.3vw; letter-spacing: 1.8vw;} 
+    #btn{ font-size: 1.5vw; letter-spacing: .6vw; } .head-container{ top: 39.5vw; right:4% } }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  @media only screen and (max-width: 790px){ .head-container { top: 340px; }}
+  @media only screen and (max-width: 500px){
+    .head-container{ left:9vw; text-align: center;} .head-intro{ padding: 0px;  justify-items: stretch; }
+    #fhead-name,#shead-name{ font-size: 7vw; letter-spacing: .5vw;} .head-text{ padding:0;}
+    #sub-head-text  { font-size: 3vw; letter-spacing: 1.4vw;} #btn{ font-size: 2.5vw; }}
+  
+  @media only screen and (max-width: 400px){ .head-container { top: 368px; } }
 
 
 /* ---------------------------------- */ /* ---------------------------------- */
@@ -183,20 +147,7 @@
     background-image: url("Images/about-img.jpg");
     background-size:     cover; 
     background-position: top;
-    background-repeat:   no-repeat;
-  }
-/* #about-overlay,
-#project-overlay
-  { position: absolute; top: 0; 
-    height: 58vw;       width:100%;
-    background-color: rgb(0, 0, 0); } */
-/* 
-#about-overlay{ opacity: .1; } */
-
-/* ----------------------- */
-/* ----------------------- */
-/* ----------------------- */
-
+    background-repeat:   no-repeat; }
 .about-container
   { width: 90%;     margin:     auto; 
     display: grid;  margin-top: -3vw;
@@ -236,70 +187,102 @@
   { width: 97%;         height: 39vw;
     grid-area: c;       display: flex;
     align-self: center; margin-top: 0px;}
-.about-intro h1{ 
-    font-size: 1.4vw;   margin-top: 10vw; 
+.about-intro h1
+  { font-size: 1.4vw;   margin-top: 10vw; 
+    width: 100%; margin: auto;
     text-align: center; letter-spacing: 2.2px;
     padding: 10px 0px;  align-self: center;
     font-family: 'Comfortaa', cursive;}
   
-#myNi{
-    width: 100%; display: inline-block; right: 18vw; 
+#myNi
+  { width: 100%; display: inline-block; right: 18vw; 
     position: relative; text-shadow: none;
-    transform: rotate(50.9deg); top: -9.5vw;
-  }
-#name{
-    display: inline-block;   position: relative;
-    width: 100%; top: 3.3vw; right: 10.5vw; 
-    transform:rotate(-37deg);
-  }
-#lctn{
-    display: inline-block;       text-shadow: none;
+    transform: rotate(50.9deg); top: -4vw; }
+#name
+  { display: inline-block;   position: relative;
+    width: 100%; top: 9.5vw; right: 12vw; 
+    transform:rotate(-37deg); }
+#lctn
+  { display: inline-block;       text-shadow: none;
     position: relative;          width: 100%;
-    left: 11.8vw; bottom: 6.6vw; transform: rotate(53deg);
-}
-
+    left: 11vw; bottom: 1vw; transform: rotate(53deg); }
 
 /* About and Skill Headings */
 .skills h1, .about-intro h1
   { position: relative; }
 
 /* Icon Configurations */
-.icons     { position: absolute; left: 10px;         }
-.fab, .fas { font-size: 2vw;     position: relative; }
+.fab, .fas { font-size: 2vw; position: relative; }
 
 /* Left-Icons */
 .fa-html5, .fa-js-square, .fa-sass,
 .fa-bootstrap, .fa-university
-  { text-shadow: 2px 3px 0px rgb(0, 0, 0);  }
+  { text-shadow: 2px 3px 0px rgb(0, 0, 0); 
+    padding-right: .3vw;  }
 /* Right-Icons */
 .fa-futbol, .fa-css3-alt, .fa-mobile-alt,
 .fa-react, .fa-github
-  { text-shadow: 2px 3px 0px rgb(255, 255, 255);}
-
-.fa-futbol     { color: black; text-shadow: 0px 0px 1px white; }
-.fa-futbol     { left: 70.2vw;   top: -8.9vw; }   /* FUT-ICON */
-.fa-html5      { left: 74vw;     top: -1.9vw; }   /* HTML-ICON */
-.fa-css3-alt   { left: 77.5vw;   top: 2.8vw;  }   /* CSS-ICON */
-.fa-js-square  { left: 72vw;     top: 7vw;    }   /* JS-ICON */
-.fa-mobile-alt { left: 72vw;     top: 11.8vw; }   /* MOBI-ICON */
-.fa-bootstrap  { left: 70.5vw;   top: 16.1vw; }   /* BSTRAP-ICON */
-.fa-github     { left: 70vw;     top: 20.7vw; }   /* GIT-ICON */
-.fa-sass       { left: 71.5vw;   top: 25vw;   }   /* -SASS-ICON */
-.fa-react      { left: 73.9vw;   top: 29.8vw; }   /* REACT-ICON */
-.fa-university { left: 60.7vw;   top: 34vw;   }   /* UNI-ICON */
+  { text-shadow: 2px 3px 0px rgb(255, 255, 255);
+    padding-left: .3vw;}
+.fa-futbol { left: 5vw; bottom: 2.4vw; }
 
 
 
+/* Media-Queries-For-About-Section */
+  @media only screen and (max-width: 1080px){
+    #name{ top:   10vw; right: 14vw; } #myNi{ top:  -3vw; right: 20vw; } #lctn{ bottom:1vw; left:  10vw; } } 
 
+  @media only screen and (max-width: 940px){ /* --------940PIXELS-------- */ /* --------940PIXELS-------- */
+    .fa-futbol { left: 7.7vw; bottom: 3.8vw; } .fab, .fas{ font-size: 2.5vw; } .skills{ font-size: 1.8vw; }
+    .skills ul li{ line-height: 5vw; } .about-intro h1{ font-size: 1.6vw; }
+    #name{ right: 25%; } #lctn{ bottom:3vw; }  #myNi{ top:-5vw; right: 25vw; } }
   
+  @media only screen and (max-width: 790px){ /* --------790PIXELS-------- */ /* --------790PIXELS-------- */
+    .skills ul li{ line-height: 6vw; }  #name{ top: 9vw; right: 12vw; transform: rotate(-40deg);  }
+    #myNi{ top:  -10vw; right: 20vw; }  #lctn{ bottom: 6vw; left: 17vw; } } 
+  
+  @media only screen and (max-width: 740px) {#name{ top:12vw; transform: rotate(-42deg);} 
+    #lctn{ bottom: 4vw;;}} 
+  
+  @media only screen and (max-width: 690px){#lctn{ bottom:2vw; } #myNi {top:-6vw;} 
+    #name{ top:15vw; transform: rotate(-43deg);}}
+  
+  @media only screen and (max-width: 650px){ /* --------650PIXELS-------- */ /* --------650PIXELS-------- */
+    .fa-futbol { left: 8.8vw; bottom: 4.5vw; } .skills{font-size: 2.2vw; } .skills ul li{ line-height: 7vw; }
+    .about-intro h1{ font-size:1.8vw; } #lctn{ bottom:5vw; } #myNi{ right:18vw; }
+    #name{ top:14vw; transform:rotate(-44.5deg);}}
+  
+  @media only screen and (max-width: 620px){ #name{ transform: rotate(-47deg);}} 
+  @media only screen and (max-width: 600px){ #lctn{ bottom: 1vw;} #name{ top:19vw; }} 
+  @media only screen and (max-width: 570px){ #myNi{ transform: rotate( 59deg); top: -2.5vw;} 
+    #name { transform: rotate(-48.5deg); top: 21.5vw;} }
+  
+  @media only screen and (max-width: 530px){ /* --------530PIXELS-------- */ /* --------530PIXELS-------- */  
+    .about-intro h1{ font-size: 2vw; } #myNi{ right: 20vw;} #lctn{ bottom:-4vw; }
+    #name{width: 140%; top:26vw; right: 40%;transform: rotate(-50deg);} }
+  
+  @media only screen and (max-width: 500px){ /* --------500PIXELS-------- */ /* --------500PIXELS-------- */
+    .fa-futbol { left: 10vw; bottom: 5.5vw; } .skills{ font-size: 11px; } .skills ul li{ line-height: 45px; }
+    .fab, .fas{ font-size: 15px; } #name{top: 16vw; transform: rotate(-54deg);} #myNi{ top: -13vw; }
+    #lctn{ bottom: 8vw; left: 18vw; } }
+
+  @media only screen and (max-width: 455px){ /* --------455PIXELS-------- */ /* --------455PIXELS-------- */
+    #name{ top: 18.4vw; transform: rotate(-55deg); } #lctn{transform: rotate(58deg);}  
+    #myNi{ top: -14vw;  transform: rotate(65deg);  }} 
+
+  @media only screen and (max-width: 430px){ #name{ top: 20vw; transform: rotate(-56.5deg);} }
+  @media only screen and (max-width: 400px){ /* --------400PIXELS-------- */ /* --------400PIXELS-------- */
+    .about-intro h1{ font-size: 9px; letter-spacing: 1.5px; } #name{ transform: rotate(-60deg); top: 30vw; }
+    #myNi{ top:-20vw; } #lctn{ transform: rotate(65deg); bottom: 4vw; left: 17vw; } }
+
+  @media only screen and (max-width: 372px) /* --------372PIXELS-------- */ /* --------372PIXELS-------- */
+  {.about-intro h1{ letter-spacing: .5px; } #name{transform: rotate(-62deg); top: 32vw;}}
+
+
 /* ---------------------------------- */ /* ---------------------------------- */
 /* PROJECT--SECTION *//* PROJECT--SECTION */ /* PROJECT--SECTION *//* ABOUT--SECTION */
 /* ---------------------------------- */ /* ---------------------------------- */
-
-
-
-/* Project-background */
-.project-bg{ 
+.project-bg{  /* Project-background */ 
   padding-top: 1px;    height: 54vw; 
   position: relative;  
   background-image:    url("Images/project-img.jpg");
@@ -312,8 +295,7 @@
   /* Project-Images-Position */
   top: 0;       right: .1vw; }
 
-/* Project-Image */
-.project-image{
+.project-image{ /* Project-Image */
   background-size: cover; opacity: 1;
   transform: scale(.432);
   background-repeat: no-repeat;
@@ -339,10 +321,10 @@
 
 /* All-Project-text */
 .project-text{
-  color: black;       display: flex; 
+  color: black;       display:     flex; 
   border-radius: .5vw;  align-items: center;
   position: absolute;   font-size: .8vw;
-  letter-spacing: .1vw; padding: 1vw;
+  letter-spacing: .1vw; padding:    1vw;
   line-height: 1.9vw;   border: black solid 2px;
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center; }
@@ -364,29 +346,11 @@
   width: 23.1%; bottom: 46.6vw;
   left: 2.4vw;  height: 11vw;   }
 
-
-
-
 .currentSlide{
   color: white; border: none;
   background-color: black; 
   transform: scale(1.05);
   transition: 3s;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 /* Next & previous buttons */
 .prev, .next {
@@ -403,8 +367,8 @@
   color: black; }
 
 /* The dots/bullets/indicators */
-.dot {
-  cursor: pointer; margin: 0 8px;
+.dot 
+{ cursor: pointer; margin: 0 8px;
   height: 1.7vmin; width: 1.7vmin;
   background-color: #bbb;
   border-radius: 50%;
@@ -413,27 +377,21 @@
 .active, .dot:hover { background-color: black; }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: .3s;}
+.fade 
+  { -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: .3s;}
 
 @-webkit-keyframes fade {
-  from {opacity: .8} 
-  to {opacity: 1} }
-
+  from {opacity: .8} to {opacity: 1} }
 @keyframes fade {
-  from {opacity: .8} 
-  to {opacity: 1} }
+  from {opacity: .8} to {opacity: 1} }
 
 
-
-
-/* Footer Section */ /* Footer Section */ /* Footer Section */
-/* Footer Section */ /* Footer Section */ /* Footer Section */
-/* Footer Section */ /* Footer Section */ /* Footer Section */
-/* Footer Section */ /* Footer Section */ /* Footer Section */
+/* ---------------------------------- */ /* ---------------------------------- */
+/* FOOTER--SECTION *//*-----*//* FOOTER--SECTION *//*-----*//* FOOTER--SECTION */ 
+/* ---------------------------------- */ /* ---------------------------------- */
 .footer-bg{ background-color: black; }
 .footer{
   display: grid;    grid-template-areas: 
@@ -450,9 +408,6 @@
 .con-sect, .info-sect
 { font-size: .6vw; line-height: 1.5vw;}
 
-
-
-
 .name{
   position: relative; bottom: 9.3vw; left: 36.8vw;
   font-size: 1.4vw; color: black; font-weight: 1000;
@@ -460,8 +415,7 @@
   background-color: white; 
   font-family: 'Baloo Da 2', cursive;
   border-bottom-left-radius: .5vw;
-  border-bottom-right-radius: .5vw;
-}
+  border-bottom-right-radius: .5vw;}
 .name::before, .name::after{
   content: "";
   background-color: white;
@@ -470,39 +424,52 @@
   position: absolute; bottom: .9vw;  }
 
 .name::before{ left: -2.56vw;   transform: rotate(89deg);}
-.name:after{   right: -2.56vw; transform: rotate(-89deg);}
-
-
-.copyRight{ 
-  grid-area: bottom;
-font-size: 1vw; }
+.name:after  { right: -2.56vw;  transform: rotate(-89deg);}
+.copyRight   { grid-area: bottom; font-size: 1vw; }
   
-@media only screen and (max-width: 1280px){
-  .back-image, .about-bg, .project-bg
-  { height: 70vw; } }
+  /* MEDIA-QUERIES-FIRST-HEAD-SECTION */
+  @media only screen and (max-width: 1280px){
+    .back-image, .about-bg, 
+    .project-bg { height: 70vw; } }
 
-@media only screen and (max-width: 1080px){
-  .back-image, .about-bg, .project-bg
-  { height: 80vw; }}
+  @media only screen and (max-width: 1080px){
+    .back-image, .about-bg, 
+    .project-bg { height: 80vw; }
+    #about--heading, #project--heading
+    { font-size: 4.2vw; letter-spacing: 2.5vw;}}
+  
+    @media only screen and (max-width: 940px){
+    .back-image, .about-bg, 
+    .project-bg { height: 95vw; }}
+  
+    @media only screen and (max-width: 790px){
+    .back-image, .about-bg, 
+    .project-bg { height: 810px } 
+    .about-bg
+     {  background-size: 125vw 810px;
+        background-position: -55px 0;}
+    #about--heading, #project--heading
+    { font-size: 5.5vw; letter-spacing: 3.2vw;} }
 
-@media only screen and (max-width: 940px){
-  .back-image, .about-bg, .project-bg
-  { height: 95vw; }}
+    @media only screen and (max-width: 620px){
+    .back-image, .about-bg,
+    .project-bg { height: 100vh; }
+    .back-image { background-size: 190vw 100vh;}}
 
-@media only screen and (max-width: 790px){
-  .back-image, .about-bg, .project-bg
-  { height: 105vh } }
+    @media only screen and (max-width: 500px){
+    .back-image, .about-bg, .project-bg { height: 780px; }
+    .about-bg
+    { background-size: 120vw 780px;
+      background-position: -40px 0px;}
+    .back-image{ background-size: 190vw 780px; }
+    #about--heading, #project--heading
+    { font-size: 7vw; letter-spacing: 2.2vw;}}
 
-@media only screen and (max-width: 620px){
-  .back-image, .about-bg, .project-bg
-  { height: 100vh; }
-  .back-image{
-    background-size: 190vw 100vh;
-  }}
-
-  @media only screen and (max-width: 400px){
-    .back-image, .about-bg, .project-bg
-    { height: 700px; }
-    .back-image{
-      background-size: 600px 750px;
+    @media only screen and (max-width: 400px){
+    .back-image, .about-bg, 
+    .project-bg { height: 840px; }
+    .about-bg   { background-size: 120vw 840px; }
+    .back-image { background-size: 600px 840px;
       background-position: -90px; }
+    #about--heading, #project--heading
+    { letter-spacing: 3vw;} }
