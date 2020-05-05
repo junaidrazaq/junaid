@@ -38,33 +38,25 @@
     /* Media-Queries-For-Nav-Section */
     @media only screen and (max-width: 1280px){ .nav-bar ul{ top: 4vw; left: 58vw }
       .nav-bar ul li{ padding: .4vw 0; } .nav-bar ul li a{ font-size: 1.2vw; }}
-    
     @media only screen and (max-width: 1080px){
       .nav-bar ul{ top: 5vw; left: 60vw } .nav-bar ul li a{ font-size: 1.5vw; }}
-    
     @media only screen and (max-width: 940px) {
       .nav-bar ul{ top: 5vw; left: 64vw } .nav-bar ul li a{ font-size: 2vw; }}
-
     @media only screen and (max-width: 790px){ .nav-bar ul { left: 66vw }}
     @media only screen and (max-width: 720px){ .nav-bar ul { left: 68vw } }
     @media only screen and (max-width: 680px){ .nav-bar ul { top: 7vw; } }
-
     @media only screen and (max-width: 500px){
-    .nav-bar ul{ left: 63vw; top: 60px; transform: rotate(-18deg);}
-    .nav-bar ul li{ padding: 3.5px 0; }
-    .nav-bar ul li a{ font-size: 2.6vw; letter-spacing: 2px;}}
-
+      .nav-bar ul{ left: 63vw; top: 60px; transform: rotate(-18deg);}
+      .nav-bar ul li{ padding: 3.5px 0; }
+      .nav-bar ul li a{ font-size: 2.6vw; letter-spacing: 2px;}}
     @media only screen and (max-width: 400px){
-    .nav-bar ul{ left: 240px; top: 80px; transform: rotate(-14deg);}
-    .nav-bar ul li{ padding: 7px 0;} .nav-bar ul li a{ font-size: 2.8vw;} }
+      .nav-bar ul{ left: 240px; top: 80px; transform: rotate(-14deg);}
+      .nav-bar ul li{ padding: 7px 0;} .nav-bar ul li a{ font-size: 2.8vw;} }
 
 
 /* --------------------------------------------------- */
 /* HEAD--SECTION *//* HEAD--SECTION *//* HEAD--SECTION */
 /* --------------------------------------------------- */
-/* @media only screen and (max-width: 1000px){
-  .page-width{ width: 100% }
-} */
 /* Head-Backgroung-Config */
 .back-image
   { position: relative;  height: 58vw;
@@ -115,18 +107,15 @@
   @media only screen and (max-width: 1080px){
     #fhead-name, #shead-name { font-size: 4vw; } .head-container{ top: 32.5vw; left:1vw }
     #sub-head-text{ letter-spacing: 1.4vw; font-size: 1.2vw;} #btn{ letter-spacing:  .8vw; } }
-  
   @media only screen and (max-width: 940px){
     #fhead-name, #shead-name{ font-size: 4.5vw; letter-spacing: 1vw;}
     #sub-head-text{ font-size: 1.3vw; letter-spacing: 1.8vw;} 
     #btn{ font-size: 1.5vw; letter-spacing: .6vw; } .head-container{ top: 39.5vw; right:4% } }
-
   @media only screen and (max-width: 790px){ .head-container { top: 340px; }}
   @media only screen and (max-width: 500px){
     .head-container{ left:9vw; text-align: center;} .head-intro{ padding: 0px;  justify-items: stretch; }
     #fhead-name,#shead-name{ font-size: 7vw; letter-spacing: .5vw;} .head-text{ padding:0;}
     #sub-head-text  { font-size: 3vw; letter-spacing: 1.4vw;} #btn{ font-size: 2.5vw; }}
-  
   @media only screen and (max-width: 400px){ .head-container { top: 368px; } }
 
 
@@ -174,7 +163,6 @@
 #s-1,#s-2,#s-3,#s-4,#s-5,#s-6,#s-7,#s-8,#s-9
   { position: relative; bottom: 3vw; 
     padding:.25vw 0; }
-
 #s-1{ right: 5vw; } #s-2{ right: 4vw; }
 #s-3{ right: 3vw; } #s-4{ right: 2vw; }
 #s-5{ right: 1vw; } #s-6{ left:  0vw; }
@@ -193,7 +181,7 @@
     text-align: center; letter-spacing: 2.2px;
     padding: 10px 0px;  align-self: center;
     font-family: 'Comfortaa', cursive;}
-  
+
 #myNi
   { width: 100%; display: inline-block; right: 18vw; 
     position: relative; text-shadow: none;
@@ -203,8 +191,8 @@
     width: 100%; top: 9.5vw; right: 12vw; 
     transform:rotate(-37deg); }
 #lctn
-  { display: inline-block;       text-shadow: none;
-    position: relative;          width: 100%;
+  { display: inline-block;   text-shadow: none;
+    position: relative;      width: 100%;
     left: 11vw; bottom: 1vw; transform: rotate(53deg); }
 
 /* About and Skill Headings */
@@ -231,50 +219,38 @@
 /* Media-Queries-For-About-Section */
   @media only screen and (max-width: 1080px){
     #name{ top:   10vw; right: 14vw; } #myNi{ top:  -3vw; right: 20vw; } #lctn{ bottom:1vw; left:  10vw; } } 
-
   @media only screen and (max-width: 940px){ /* --------940PIXELS-------- */ /* --------940PIXELS-------- */
     .fa-futbol { left: 7.7vw; bottom: 3.8vw; } .fab, .fas{ font-size: 2.5vw; } .skills{ font-size: 1.8vw; }
     .skills ul li{ line-height: 5vw; } .about-intro h1{ font-size: 1.6vw; }
-    #name{ right: 25%; } #lctn{ bottom:3vw; }  #myNi{ top:-5vw; right: 25vw; } }
-  
-  @media only screen and (max-width: 790px){ /* --------790PIXELS-------- */ /* --------790PIXELS-------- */
+    #name{ right: 25%; } #lctn{ bottom:3vw; } #myNi{ top:-5vw; right: 25vw; } }
+  @media only screen and (max-width: 790px) { /* --------790PIXELS-------- */ /* --------790PIXELS-------- */
     .skills ul li{ line-height: 6vw; }  #name{ top: 9vw; right: 12vw; transform: rotate(-40deg);  }
     #myNi{ top:  -10vw; right: 20vw; }  #lctn{ bottom: 6vw; left: 17vw; } } 
-  
-  @media only screen and (max-width: 740px) {#name{ top:12vw; transform: rotate(-42deg);} 
-    #lctn{ bottom: 4vw;;}} 
-  
-  @media only screen and (max-width: 690px){#lctn{ bottom:2vw; } #myNi {top:-6vw;} 
+  @media only screen and (max-width: 740px) { #name{top:12vw; transform:rotate(-42deg);} #lctn{ bottom: 4vw;;}} 
+  @media only screen and (max-width: 690px) { #lctn{ bottom:2vw; } #myNi {top:-6vw;} 
     #name{ top:15vw; transform: rotate(-43deg);}}
-  
-  @media only screen and (max-width: 650px){ /* --------650PIXELS-------- */ /* --------650PIXELS-------- */
+  @media only screen and (max-width: 650px) { /* --------650PIXELS-------- */ /* --------650PIXELS-------- */
     .fa-futbol { left: 8.8vw; bottom: 4.5vw; } .skills{font-size: 2.2vw; } .skills ul li{ line-height: 7vw; }
     .about-intro h1{ font-size:1.8vw; } #lctn{ bottom:5vw; } #myNi{ right:18vw; }
     #name{ top:14vw; transform:rotate(-44.5deg);}}
-  
-  @media only screen and (max-width: 620px){ #name{ transform: rotate(-47deg);}} 
-  @media only screen and (max-width: 600px){ #lctn{ bottom: 1vw;} #name{ top:19vw; }} 
-  @media only screen and (max-width: 570px){ #myNi{ transform: rotate( 59deg); top: -2.5vw;} 
+  @media only screen and (max-width: 620px) { #name{ transform: rotate(-47deg);}} 
+  @media only screen and (max-width: 600px) { #lctn{ bottom: 1vw;} #name{ top:19vw; }} 
+  @media only screen and (max-width: 570px) { #myNi{ transform: rotate( 59deg); top: -2.5vw;} 
     #name { transform: rotate(-48.5deg); top: 21.5vw;} }
-  
-  @media only screen and (max-width: 530px){ /* --------530PIXELS-------- */ /* --------530PIXELS-------- */  
+  @media only screen and (max-width: 530px) { /* --------530PIXELS-------- */ /* --------530PIXELS-------- */  
     .about-intro h1{ font-size: 2vw; } #myNi{ right: 20vw;} #lctn{ bottom:-4vw; }
     #name{width: 140%; top:26vw; right: 40%;transform: rotate(-50deg);} }
-  
-  @media only screen and (max-width: 500px){ /* --------500PIXELS-------- */ /* --------500PIXELS-------- */
+  @media only screen and (max-width: 500px) { /* --------500PIXELS-------- */ /* --------500PIXELS-------- */
     .fa-futbol { left: 10vw; bottom: 5.5vw; } .skills{ font-size: 11px; } .skills ul li{ line-height: 45px; }
     .fab, .fas{ font-size: 15px; } #name{top: 16vw; transform: rotate(-54deg);} #myNi{ top: -13vw; }
     #lctn{ bottom: 8vw; left: 18vw; } }
-
-  @media only screen and (max-width: 455px){ /* --------455PIXELS-------- */ /* --------455PIXELS-------- */
+  @media only screen and (max-width: 455px) { /* --------455PIXELS-------- */ /* --------455PIXELS-------- */
     #name{ top: 18.4vw; transform: rotate(-55deg); } #lctn{transform: rotate(58deg);}  
-    #myNi{ top: -14vw;  transform: rotate(65deg);  }} 
-
-  @media only screen and (max-width: 430px){ #name{ top: 20vw; transform: rotate(-56.5deg);} }
-  @media only screen and (max-width: 400px){ /* --------400PIXELS-------- */ /* --------400PIXELS-------- */
+    #myNi{ top: -14vw;  transform: rotate(65deg);  }}
+  @media only screen and (max-width: 430px) { #name{ top: 20vw; transform: rotate(-56.5deg);} }
+  @media only screen and (max-width: 400px) { /* --------400PIXELS-------- */ /* --------400PIXELS-------- */
     .about-intro h1{ font-size: 9px; letter-spacing: 1.5px; } #name{ transform: rotate(-60deg); top: 30vw; }
     #myNi{ top:-20vw; } #lctn{ transform: rotate(65deg); bottom: 4vw; left: 17vw; } }
-
   @media only screen and (max-width: 372px) /* --------372PIXELS-------- */ /* --------372PIXELS-------- */
   {.about-intro h1{ letter-spacing: .5px; } #name{transform: rotate(-62deg); top: 32vw;}}
 
@@ -334,17 +310,16 @@
   width: 46%;   bottom: 48vw; 
   right: 26.5vw;                }
 #eCom{
-  width: 23.1%; bottom: 46.2vw;
-  right: 2vw;   height: 11.5vw; }
-#toDo{
-  width: 17%;   bottom: 22vw;
-  right: 4.8vw;                 }
-#rPs{
-  width: 17%;   bottom: 21.9vw;
-  left: 5.4vw;                  }
+  right: 2vw;   bottom: 46.2vw;
+  height: 11.5vw; }
 #calc{
-  width: 23.1%; bottom: 46.6vw;
-  left: 2.4vw;  height: 11vw;   }
+  left: 2.4vw;  bottom: 46.6vw;
+  height: 11vw;   }
+
+#toDo{ bottom: 22vw;   right: 4.8vw; }
+#rPs { bottom: 21.9vw; left:  5.4vw; }
+#eCom, #calc{ width: 23.1%; } 
+#toDo, #rPs { width: 17%;   }
 
 .currentSlide{
   color: white; border: none;
@@ -382,12 +357,55 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: .3s;}
-
 @-webkit-keyframes fade {
   from {opacity: .8} to {opacity: 1} }
 @keyframes fade {
   from {opacity: .8} to {opacity: 1} }
 
+  @media only screen and (max-width: 1280px){
+    .project-image{ transform: scale(.529); } .project-container{ top: 10.4vw; }
+    .project-text{ border: none; font-size: .8vw;} #weathApp{ bottom: 52vw; }
+    #eCom, #calc{ bottom: 48.5vw; height: 13.5vw; } #eCom{ right: 2vw; } #calc{ left: 2.8vw; }
+    #toDo,#rPs{ width: 14.5%; } .prev, .next{ bottom: 13vw; font-size: 2vw; left: 25%; } }
+  @media only screen and (max-width: 1080px){
+    .project-image{ transform: scale(.605); } .project-container{ top: 6.4vw; }
+    .weathApp,.eCom,.toDo,.rPs,.calc{height: 67.9vw;} .project-text{ font-size: 1vw;}
+    #weathApp{ bottom: 63vw;} #eCom, #calc{ bottom: 59.5vw; height: 14.5vw; }
+    #eCom{ right: 2vw; } #calc{ left: 2.8vw; } #toDo{ right: 2.8vw; } #rPs { left:  2.8vw; }
+    .prev, .next{ bottom: 13vw; font-size: 3.5vw; left: 22%; }}
+  @media only screen and (max-width: 940px){
+    .project-container{ top: 8vw; } .weathApp,.eCom,.toDo,.rPs,.calc{height: 80vw;}
+    .project-text{ font-size: 1.1vw;} #weathApp{ bottom: 77vw; right: 26.5vw; }
+    #eCom, #calc{ bottom: 73.5vw; height: 14.5vw; } #toDo, #rPs{ bottom: 31vw }}
+  @media only screen and (max-width: 790px){
+    .project-image{ transform: scale(.821); } #weathApp{ bottom: 590px; right: 200px;}
+    .weathApp,.eCom,.toDo,.rPs,.calc{height: 440px;} .project-container{ top: 240px; }
+    .project-text{ font-size: 7.5px; letter-spacing: 1.5px;}
+    #eCom, #calc{ top: -199px; height: 110px; } #toDo, #rPs { bottom: 450px; width: 37%; } 
+    .prev, .next{ bottom: 4.7vw; font-size: 4vw; left: 10%; }}
+  @media only screen and (max-width: 710px){#weathApp{right:180px;}}
+  @media only screen and (max-width: 640px){#weathApp{right:167px;}}
+  @media only screen and (max-width: 620px){
+    .project-image{ transform: scale(.82); } .project-container{ top: 220px; }
+    .weathApp,.eCom,.toDo,.rPs,.calc{height: 405px;} #weathApp{ bottom: 560px; right: 165px; }
+    .project-text{ font-size: 7px; letter-spacing: 1px;}
+    #eCom, #calc{ top: -199px; height: 100px; width: 24.9%; }
+    #eCom{ right: 1vw; } #calc{ left: 1vw; } #toDo, #rPs{ bottom: 430px; width: 29%;} }
+  @media only screen and (max-width: 600px){.project-text{font-size: 6.5px;}}
+  @media only screen and (max-width: 560px){#weathApp{right:145px;}}
+  @media only screen and (max-width: 500px){#weathApp{right:130px; bottom: 555px;}
+  .project-text{ font-size: 7px; letter-spacing: 1.2px; font-weight: lighter;}
+  #eCom, #calc{width:20%; top: -220px;} #toDo, #rPs{ bottom: 430px; width: 43%;}
+  .project-image{ transform: scale(.945); } .project-container{ top: 262px; right: 0.2vw; }
+  .weathApp,.eCom,.toDo,.rPs,.calc{height: 365px;}
+  .prev, .next{ bottom: 4.5px; font-size: 27px; left: 4%; }}
+  @media only screen and (max-width: 430px){#weathApp{right:110px;}}
+  @media only screen and (max-width: 400px)
+  { .project-image{ transform: scale(.97); } .project-container{ top: 342px; }
+  .weathApp,.eCom,.toDo,.rPs,.calc{height: 345px;} #toDo, #rPs{ width: 38%;}
+  #weathApp{right:130px; bottom: 605px;} .project-text{ letter-spacing: 1.8px;}
+  #eCom, #calc{width:19%; top: -290px;} #weathApp{right:110px;}}
+  
 
 /* ---------------------------------- */ /* ---------------------------------- */
 /* FOOTER--SECTION *//*-----*//* FOOTER--SECTION *//*-----*//* FOOTER--SECTION */ 
@@ -427,49 +445,27 @@
 .name:after  { right: -2.56vw;  transform: rotate(-89deg);}
 .copyRight   { grid-area: bottom; font-size: 1vw; }
   
-  /* MEDIA-QUERIES-FIRST-HEAD-SECTION */
-  @media only screen and (max-width: 1280px){
-    .back-image, .about-bg, 
-    .project-bg { height: 70vw; } }
-
-  @media only screen and (max-width: 1080px){
-    .back-image, .about-bg, 
-    .project-bg { height: 80vw; }
-    #about--heading, #project--heading
+  /* MEDIA-QUERIES-FOR-BACKGROUNDS */
+  @media only screen and (max-width: 1280px){ .back-image,.about-bg,.project-bg { height: 70vw;}}
+  @media only screen and (max-width: 1080px){ .back-image,.about-bg,.project-bg { height: 80vw; }
+    .project-bg{ background-size: 140% 115%; } #about--heading, #project--heading
     { font-size: 4.2vw; letter-spacing: 2.5vw;}}
   
-    @media only screen and (max-width: 940px){
-    .back-image, .about-bg, 
-    .project-bg { height: 95vw; }}
-  
-    @media only screen and (max-width: 790px){
-    .back-image, .about-bg, 
-    .project-bg { height: 810px } 
-    .about-bg
-     {  background-size: 125vw 810px;
-        background-position: -55px 0;}
-    #about--heading, #project--heading
-    { font-size: 5.5vw; letter-spacing: 3.2vw;} }
+  @media only screen and (max-width: 940px){ .back-image, .about-bg, .project-bg{ height: 95vw; }}
+  @media only screen and (max-width: 790px){ .back-image, .about-bg, .project-bg { height: 810px }
+    .project-bg{ background-size: 190% 100%; } .about-bg{  background-size: 125vw 810px;
+      background-position: -55px 0;} #about--heading, #project--heading{ font-size: 5.5vw; 
+      letter-spacing: 3.2vw;} }
 
-    @media only screen and (max-width: 620px){
-    .back-image, .about-bg,
-    .project-bg { height: 100vh; }
-    .back-image { background-size: 190vw 100vh;}}
+  @media only screen and (max-width: 620px){ .back-image, .about-bg, .project-bg { height: 100vh; }
+  .back-image { background-size: 190vw 100vh;}}
 
-    @media only screen and (max-width: 500px){
-    .back-image, .about-bg, .project-bg { height: 780px; }
-    .about-bg
-    { background-size: 120vw 780px;
-      background-position: -40px 0px;}
-    .back-image{ background-size: 190vw 780px; }
-    #about--heading, #project--heading
-    { font-size: 7vw; letter-spacing: 2.2vw;}}
+  @media only screen and (max-width: 500px){ .back-image, .about-bg, .project-bg { height: 780px; }
+    .project-bg{ background-size: 220% 100%; } .about-bg{  background-size: 120vw 780px;
+      background-position: -40px 0px;} .back-image{ background-size: 190vw 780px; }
+    #about--heading, #project--heading{ font-size: 7vw; letter-spacing: 2.2vw;}}
 
-    @media only screen and (max-width: 400px){
-    .back-image, .about-bg, 
-    .project-bg { height: 840px; }
-    .about-bg   { background-size: 120vw 840px; }
-    .back-image { background-size: 600px 840px;
-      background-position: -90px; }
-    #about--heading, #project--heading
-    { letter-spacing: 3vw;} }
+  @media only screen and (max-width: 400px){ .back-image, .about-bg, .project-bg { height: 840px; }
+    .about-bg   { background-size: 120vw 840px; } .back-image { background-size: 600px 840px;
+      background-position: -90px; } .project-bg{ background-size: 225% 90%; }
+    #about--heading, #project--heading { letter-spacing: 3vw;} }
