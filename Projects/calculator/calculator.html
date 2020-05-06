@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="color-overlay"></div>
+    <div class="heading">
+        <h1>Caculator By Junaid Razaq</h1>
+    </div>
+
+
+    <div class="buttonWrap">
+        <!--InputDisplay-->
+        <div class="btnDisplay">
+            <h3 class="both" id="updateDisplay">Start!</h3>
+            <h2 class="both" id="display"></h2>
+        </div>
+        <!--AllButtons-->
+        <button class = "calc-btns"  id="btnc" onclick="empty()">C</button>
+        <button class = "calc-btns"  id="btnBack" onclick="backSpace()">del</button>
+        <button class = "calc-btns"  id="btn/" onclick="insert('/')">/</button>
+        <button class = "calc-num"  id="btn7" onclick="insert(7)">7</button>
+        <button class = "calc-num"  id="btn8" onclick="insert(8)">8</button>
+        <button class = "calc-num"  id="btn9" onclick="insert(9)" >9</button>
+        <button class = "calc-btns"  id="btnX" onclick="insert('*')" >*</button>
+        <button class = "calc-num"  id="btn4" onclick="insert(4)" >4</button>
+        <button class = "calc-num"  id="btn5" onclick="insert(5)" >5</button>
+        <button class = "calc-num"  id="btn6" onclick="insert(6)" >6</button>
+        <button class = "calc-btns"  id="btn-" onclick="insert('-')">-</button>
+        <button class = "calc-num"  id="btn1" onclick="insert(1)">1</button>
+        <button class = "calc-num"  id="btn2" onclick="insert(2)">2</button>
+        <button class = "calc-num"  id="btn3" onclick="insert(3)">3</button>
+        <button class = "calc-btns"  id="btn+" onclick="insert('+')">+</button>
+        <button class = "calc-num"  id="btn0" onclick="insert(0)">0</button>
+        <button class = "calc-num"  id="btn." onclick="insert('.')">.</button>
+        <button class = "calc-btns"  id="btn=" onclick="equals()">=</button>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="Javascript/main.js"></script>
+</body>
+</html>

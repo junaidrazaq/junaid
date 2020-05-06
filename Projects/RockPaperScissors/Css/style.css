@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;}
+
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh; width: 75%;
+    margin:auto;
+    font-family: fantasy; }
+
+.scoreContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+    font-size: 80px;
+    border: rgb(78, 12, 12) solid 8px;
+    border-radius: 30px; }
+
+.rpsContainer{
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 40px; }
+
+.resultContainer{
+    text-align: center;
+    margin-top: 70px; }
+
+#paper, #rock, #scissors{
+    width: 160px; height: 160px;
+    border-radius: 140px;
+    border: rgb(65, 20, 20) 8px solid;
+    cursor: pointer;
+    transition:.2s; }
+
+#paper:hover, #rock:hover, #scissors:hover{
+    width: 140px; height: 140px;
+    border: 5px white solid }
+
+#result{
+    font-size: 6vmin;
+    line-height: 25px;
+    font-weight: bolder;
+    line-height: 5.5vmin;
+    letter-spacing: .6vmin; }
+
+.choice{
+    color: coral;
+    text-shadow: 2px 2px 12px black; }
+
+
+
+
+@media only screen and (max-width: 750px){
+    #paper, #rock, #scissors{
+        width: 70px; height: 70px;
+        border-radius: 140px;
+        border: rgb(65, 20, 20) 4px solid;
+        cursor: pointer;
+        transition: width 0.5s, height 0.5s; }
+
+    #paper:hover, #rock:hover, #scissors:hover{
+        width: 80px; height: 80px;}
+    
+    .scoreContainer{ font-size: 40px; } }
+

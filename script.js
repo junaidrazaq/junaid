@@ -105,24 +105,43 @@ function plusSlides(n){
 // })
 
 
+//-----------------------------------//
+//-------LINKAGE-FUNCTIONALITY-------//
+//-----------------------------------//
 
-// Direct user to projects
-// document.getElementById("weatherApp").addEventListener("click", () => {
-//     window.location = "Projects/weatherApp/index.html"
-// })
+document.getElementById("weatherImage").addEventListener("click", () => {
+    window.location = "Projects/weatherApp/index.html" })
+document.getElementById("calcImage").addEventListener("click", () => {
+    window.location = "Projects/calculator/calculator.html"})
+document.getElementById("rpsImage").addEventListener("click", () => {
+    window.location = "Projects/RockPaperScissors/index.html"})
+document.getElementById("ecomImage").addEventListener("click", () => {
+    window.location = "Projects/AdumsWebsite/index.html"})
+document.getElementById("todoImage").addEventListener("click", () => {
+    window.location = "Projects/todoApp/index.html"})
 
-// document.getElementById("calculator").addEventListener("click", () => {
-//     window.location = "Projects/calculator/calculator.html"
-// })
+//------------------------------------//
+//--------SCROLL-FUNCTIONALITY--------//
+//------------------------------------//
 
-// document.getElementById("rps").addEventListener("click", () => {
-//     window.location = "Projects/RockPaperScissors/index.html"
-// })
+//Scroll-To-About-Section
+$("#about").click(function() {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: parseInt($(".about-bg").offset().top)
+    }, 2000);});
 
-// document.getElementById("sampleWeb").addEventListener("click", () => {
-//     window.location = "Projects/AdumsWebsite/index.html"
-// })
+//Scroll-To-Project-Section
+$("#projects").click(function() {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: parseInt($(".project-bg").offset().top)
+    }, 2000);});
 
-// document.getElementById("toDo").addEventListener("click", () => {
-//     window.location = "Projects/todoApp/index.html"
-// })
+//Scroll-To-Contact-Section
+$("#contact").click(function() {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: parseInt($(".footer-bg").offset().top)
+    }, 2000);
+});
